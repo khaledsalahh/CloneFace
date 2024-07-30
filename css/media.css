@@ -1,0 +1,36 @@
+@media (max-width: 1430px) {
+  .right {
+    display: none;
+  }
+  .logo .search input {
+    width: 0;
+  }
+
+  .logo .search img {
+    left: 8px;
+  }
+}
+@media (max-width: 1024px) {
+  .left {
+    display: none;
+  }
+  .container .items {
+    justify-content: space-around;
+  }
+}
+@media (max-width: 694px) {
+  .container .items {
+    display: none;
+  }
+}
+@media (max-width: 280px) {
+  .logo {
+    display: none;
+  }
+  .notifacation {
+    justify-content: center;
+  }
+  .container {
+    justify-content: center;
+  }
+}

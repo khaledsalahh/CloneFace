@@ -1,0 +1,822 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+body {
+  font-family: "Cairo", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #f0f2f5;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+h1 {
+  margin: 0 !important;
+  padding: 0;
+}
+.container {
+  position: sticky;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  min-height: 55px;
+  background-color: white;
+  margin: auto;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+}
+.container .container-fluid {
+  display: flex;
+  width: 98%;
+  margin: auto;
+  justify-content: space-between;
+}
+/* ............................ */
+.logo {
+  max-width: fit-content;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 5px;
+}
+
+.logo img:nth-child(1) {
+  object-fit: contain;
+  width: 40px;
+  height: 40px;
+}
+.logo .search input {
+  width: 200px;
+  padding: 5px 10px 5px 28px;
+  outline: none;
+  border: transparent;
+  background-color: #f0f2f5;
+  border-radius: 20px;
+}
+.search {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.logo .search img {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 5px;
+}
+/* ............................ */
+.container .items {
+  display: flex;
+
+  align-items: center;
+  width: 500px;
+  justify-content: space-between;
+}
+.container .items img {
+  width: 30px;
+  height: 30px;
+  transition: all 0.3s;
+}
+
+.container .items img:hover {
+  transform: translateY(-5px);
+}
+/* ............................ */
+.notifacation {
+  display: flex;
+  align-items: center;
+  width: 250px;
+  gap: 10px;
+  justify-content: end;
+}
+.notifacation img,
+.notifacation .spe {
+  width: 20px;
+  height: 20px;
+  background-color: #e4e6eb;
+  border-radius: 50%;
+  padding: 10px;
+  border: none !important;
+}
+.notifacation .spe {
+  position: relative;
+}
+.notifacation .spe::before {
+  content: "2";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #e41e3f;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: -5px;
+  top: -5px;
+}
+
+.notifacation div {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.notifacation div img {
+  padding: 0 !important;
+  background-color: transparent !important;
+  object-fit: contain !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+img {
+  cursor: pointer;
+}
+/* /////////////  HEADER  /////////////////////// */
+section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+header {
+  width: 100%;
+  background-image: linear-gradient(
+    to top,
+    #ffffff,
+    rgba(255, 255, 255.9),
+    rgba(255, 255, 255, 0.7),
+    #e0d9b8
+  );
+  display: flex;
+  justify-content: center;
+}
+.thehead {
+  height: 100%;
+  width: 1250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.thehead .image img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.thehead .image {
+  width: 100%;
+  height: 350px;
+  border-radius: 5px;
+  position: relative;
+}
+header .thehead .name {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.left {
+  display: flex;
+  gap: 10px;
+}
+.thehead .image button {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background-color: #fff;
+  padding: 8px 15px;
+  outline: navajowhite;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.thehead .image button:hover {
+  background-color: #d2d5c7;
+}
+.thehead .image button span img {
+  width: 20px;
+  height: 20px;
+}
+.name .left .profilepic {
+  border-radius: 50%;
+  border: 4px solid white;
+  width: 150px;
+  position: relative;
+  top: -20px;
+}
+.info {
+  height: 135px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.name .left .info p {
+  color: #65676b;
+}
+
+.name .left .info .allfriend img {
+  width: 30px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.name .left .info .allfriend img:not(:first-child) {
+  margin-left: -10px;
+}
+.name .right {
+  display: flex;
+  gap: 10px;
+}
+button {
+  cursor: pointer;
+}
+.name .right button:nth-child(1) {
+  background-color: #0866ff;
+  color: white;
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.name .right button:nth-child(2) {
+  background-color: #e4e6eb;
+  color: white;
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: black;
+  text-align: center;
+  display: flex;
+  gap: 5px;
+}
+.name .right button:nth-child(1) span img {
+  width: 15px;
+}
+.name .right button:nth-child(2) span img {
+  width: 15px;
+}
+.name .right .down img {
+  width: 20px;
+}
+.name .right .down {
+  background-color: #e4e6eb;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+.name::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #caccd0;
+  bottom: 0;
+}
+.link {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.link ul {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  gap: 10px;
+  margin: 0;
+  margin-top: 5px;
+}
+.link ul li {
+  color: #65676b;
+  transition: all 0.2s;
+  border-radius: 5px;
+  width: 70px;
+  height: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.link ul li:hover {
+  background-color: #e0e2e7;
+  cursor: pointer;
+}
+.link ul li:nth-child(1) {
+  position: relative;
+  color: #0866ff;
+}
+.link ul li:nth-child(1) div {
+  width: 100%;
+  background-color: #0866ff;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+}
+.link div:nth-child(2) img {
+  width: 20px;
+}
+.link div:nth-child(2) {
+  background-color: #e4e6eb;
+  width: 50px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+.post {
+  width: 100%;
+  min-height: 115px;
+  background-color: white;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.post .mind {
+  display: flex;
+  gap: 10px;
+  position: relative;
+  height: 60px;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+}
+.post .mind img,
+.cont .mind img {
+  width: 40px !important;
+  height: 40px !important;
+  object-fit: cover;
+  border-radius: 50% !important;
+}
+.post .mind input,
+.cont .mind input {
+  width: 100%;
+  padding: 0 20px;
+  outline: none;
+  border: transparent;
+  background-color: #f0f2f5;
+  border-radius: 20px;
+  height: 40px;
+}
+.post .mind::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+
+  background-color: #e4e6eb;
+  bottom: 0;
+}
+.feel {
+  display: flex;
+  justify-content: space-evenly;
+  height: 50px;
+}
+.feel img {
+  width: 40px !important;
+  height: 40px !important;
+}
+.feel p {
+  color: black !important;
+  position: relative !important;
+}
+.feel div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.master {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  max-width: 1250px;
+}
+.master .leftside {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 49%;
+}
+.master .rightside {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 60%;
+}
+.master .ss {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  background-color: white;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  height: 90px;
+}
+.master .ss img {
+  width: 35px;
+}
+h4 {
+  padding: 0;
+  margin: 0;
+}
+.master .ss div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.master .ss div p {
+  color: #0866ff;
+  cursor: pointer;
+}
+.master .ss div p:hover {
+  text-decoration: underline;
+}
+.master .ss .insidess {
+  display: flex;
+  width: 95%;
+  margin: auto;
+  flex-direction: revert;
+  gap: 5px;
+}
+.master .intro {
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+}
+.master .intro .introin {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.master .intro .introin button {
+  background-color: #e4e6eb;
+  padding: 8px 15px;
+  outline: navajowhite;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #2c2c2d;
+}
+.firstinfo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.myinfo .firstinfo img {
+  width: 25px;
+}
+.myinfo {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.firstinfo p {
+  color: #727272;
+}
+.firstinfo p span {
+  color: black;
+  cursor: pointer;
+}
+.firstinfo p span:hover {
+  text-decoration: underline;
+}
+/* ////////////My Posts/////////////////// */
+.amit {
+  width: 100%;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+}
+.amit .title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 50px;
+  justify-content: space-between;
+  width: 95%;
+  margin: auto;
+}
+.amit .title img {
+  width: 30px !important;
+  height: 30px !important;
+  border-radius: 50% !important;
+}
+.time {
+  display: flex;
+  flex-direction: column;
+}
+.time h5,
+h6 {
+  margin: 0;
+}
+.time h6 {
+  color: #8c8d90;
+  width: fit-content;
+}
+.move {
+  display: flex;
+  justify-content: flex-start !important;
+}
+.info .p p,
+.ul p {
+  position: relative;
+  color: black;
+  left: 0 !important;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  width: 95%;
+  margin: auto;
+}
+.p {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+.comments {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin: auto;
+  position: relative;
+  height: 50px;
+  align-items: center;
+}
+.comments img {
+  width: 30px !important;
+  height: 30px !important;
+}
+.react {
+  display: flex;
+  align-items: center;
+}
+.react span {
+  color: #787a7e;
+}
+.share {
+  display: flex;
+  gap: 10px;
+  color: #8c8d90;
+}
+.comments::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background-color: #ced0d4;
+  bottom: 0;
+  left: 0;
+}
+.info .ul span {
+  font-weight: bold;
+}
+
+.comments .share p:hover,
+.info .ul span:hover,
+.move .time h5:hover,
+.comments .react span:hover,
+.move .time h6:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.img-comments {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+.img-comments .feel div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  justify-content: center;
+  transition: all 0.2s;
+}
+.img-comments .feel {
+  position: relative;
+  width: 95%;
+  margin: auto;
+}
+
+.img-comments .feel div:hover {
+  background-color: #ced0d494;
+  cursor: pointer;
+}
+.img-comments .feel::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #ced0d4;
+  bottom: 0;
+}
+.writecomment .cont {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.writecomment .cont div p {
+  color: #787a7e;
+}
+.writecomment .cont div .coo img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.writecomment .cont .all {
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+}
+.thecoment {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  background-color: #f0f2f5;
+  border-radius: 10px;
+  padding: 5px 20px;
+}
+.thecoment p {
+  color: black !important;
+  font-size: 15px !important;
+}
+.reply {
+  display: flex;
+  gap: 12px;
+  font-size: 12px;
+  justify-content: center;
+}
+.reply p {
+  padding: 0;
+  margin: 0;
+}
+.reply p:nth-child(2),
+.reply p:nth-child(3) {
+  color: black !important;
+}
+.reply p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.writecomment .cont .view p:nth-child(1):hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.cont .mind {
+  display: flex;
+  gap: 10px;
+  position: relative;
+  height: 60px;
+
+  align-items: center;
+}
+.emo {
+  position: absolute;
+  gap: 5px;
+  right: 10px;
+  display: flex;
+}
+.mind .emo img {
+  width: 25px !important;
+  height: 25px !important;
+  border-radius: 50%;
+  padding: 5px;
+}
+.mind .emo img:hover {
+  background-color: #ced0d494;
+}
+/* //////////Section Photo/////////// */
+.photoo {
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+  min-height: 520px;
+  display: flex;
+}
+.photoo .photoin {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+h3 {
+  padding: 0;
+  margin: 0;
+}
+.pForphotos {
+  display: flex;
+  justify-content: space-between;
+}
+.pForphotos p {
+  color: #0064d1;
+}
+.pForphotos p:hover,
+.pForphotos h3:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.photoin .AllPhotos img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+.AllPhotos {
+  text-align: center;
+}
+/* ///////////////////////////////// */
+.AllPhotos img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+.friends {
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+}
+.friends .friendin {
+  width: 95%;
+  margin: auto;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title .lefttitle p {
+  color: #65676b;
+}
+.lefttitle {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.title .righttitle p {
+  color: #0062cd;
+}
+.title .righttitle p:hover,
+.title .lefttitle h3:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.friendin .AllPhotoos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  text-align: center;
+}
+.AllPhotoos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+.AllPhotoos div {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 3px;
+}
+.AllPhotoos div p {
+  font-size: 15px;
+}
+.AllPhotoos img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+/* ///////////////////// */
+article {
+  max-width: 1250px;
+}
